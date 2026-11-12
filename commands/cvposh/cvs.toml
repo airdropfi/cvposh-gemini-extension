@@ -1,0 +1,9 @@
+description = "List the CVs saved in your CVPosh account (read-only, no CV content)"
+prompt = """
+List the user's CVs on CVPosh. This is read-only: do not change anything.
+
+1. Call `list_cvs`.
+2. Show the result as a short table: title, template, last updated, id. Do not add content the tool did not return.
+3. If there are no CVs, say so and point the user to https://cvposh.com/builder to create one.
+4. If the tools say sign-in is required, tell the user to run `/mcp auth cvposh`.
+"""

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "cvposh",
+  "displayName": "CVPosh",
+  "version": "1.0.0",
+  "description": "Read your CVPosh resumes, check them for ATS problems and match them to a job posting. Read-only: it never changes your CVs.",
+  "logo": "assets/icon.png",
+  "suggestedPrompts": [
+    "List the CVs in my CVPosh account",
+    "Check my CV for ATS compatibility and tell me what to fix first",
+    "Compare my CV with this job posting and show the missing keywords"
+  ],
+  "author": {
+    "name": "CVPosh",
+    "url": "https://cvposh.com"
+  },
+  "homepage": "https://cvposh.com",
+  "repository": "https://github.com/airdropfi/cvposh-gemini-extension",
+  "license": "MIT",
+  "keywords": ["resume", "cv", "ats", "career", "mcp", "cvposh"]
+}

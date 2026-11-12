@@ -1,0 +1,11 @@
+{
+  "name": "cvposh",
+  "version": "1.0.0",
+  "description": "Read your CVPosh resumes from Gemini CLI, check them for ATS problems and match them to a job posting. Read-only: it never changes your CVs.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "cvposh": {
+      "httpUrl": "https://cvposh.com/api/mcp"
+    }
+  }
+}

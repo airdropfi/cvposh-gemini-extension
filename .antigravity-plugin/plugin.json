@@ -3,7 +3,7 @@
   "name": "cvposh",
   "displayName": "CVPosh",
   "version": "1.0.0",
-  "description": "CVPosh is a resume and CV builder with an MCP server built for AI agents: your agent reads your saved CVs, scores them for ATS compatibility and compares them with a job posting, and you review and edit the result.",
+  "description": "CVPosh is a resume and CV builder with an MCP server built for AI agents: your agent reads your saved CVs, scores them for ATS compatibility and compares them with a job posting, and you review and edit the result. All tools are read-only.",
   "logo": "assets/icon.png",
   "suggestedPrompts": [
     "List the CVs in my CVPosh account",

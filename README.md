@@ -2,6 +2,34 @@
 
 Work on the resumes you built at [CVPosh](https://cvposh.com) without copy and paste, from Gemini CLI. The extension connects Gemini to the CVPosh MCP server and adds three slash commands and a context file. Everything is read-only: Gemini can read your CVs, score them for applicant tracking systems (ATS) and compare them with a job posting, but it cannot change, delete or share them.
 
+## At a glance
+
+- **What it is:** CVPosh is a resume and CV builder with an MCP server built for AI agents: your agent reads your saved CVs, scores them for ATS compatibility and compares them with a job posting, and you review and edit the result.
+- **Who uses it:** an AI assistant or agent (ChatGPT, Claude, Claude Code, Cursor, Gemini CLI, other MCP clients) working for a job seeker or career coach. The human tags the work, approves the connection and reviews the output.
+- **What it does not do:** every tool is read-only, so an agent cannot create, edit, delete, export or share a CV. The ATS score is a fixed checklist, not a simulation of any employer's system, and it does not predict interviews or hiring.
+- **Price:** the connector needs a free CVPosh account and is not tied to a paid plan. CVPosh Pro is $5 per month or $9 once and covers DOCX export, more PDF exports, all 25 templates and AI job tailoring in the editor.
+- **Data and control:** the ATS and keyword checks run on CVPosh servers with fixed rules, call no AI model and store nothing. You approve the connection on a consent page, see it under Settings > API keys, and can delete it at any time; connections expire after 90 days. Profile photos are never sent.
+- **MCP:** `https://cvposh.com/api/mcp` (Streamable HTTP). Official MCP Registry name: `com.cvposh/cvposh`. Server card: https://cvposh.com/.well-known/mcp/server-card.json
+- **Limits per connection:** 120 requests a minute, 100 tool calls a day.
+
+## Install in 60 seconds
+
+```bash
+gemini extensions install https://github.com/airdropfi/cvposh-gemini-extension
+```
+
+Restart Gemini CLI, run `/mcp auth cvposh`, sign in to CVPosh in the browser and click Allow on the consent page.
+
+## Prompts to copy
+
+You assign the work and review the result:
+
+- "Assign to CVPosh: list my saved CVs, run the ATS check on the newest one and show me the issues in priority order. Change nothing; I will make the edits and review each one."
+- "Use CVPosh to compare my CV with the job posting below. Show matched and missing keywords and quote where each comes from, so I can approve what to add. [paste posting]"
+- "Read my CV with CVPosh and draft three stronger bullets for my most recent job. Show each next to the original; I approve before anything goes into my CV."
+
+More prompts, the agent quickstart, error handling and the human-oversight controls: https://cvposh.com/mcp (markdown: https://cvposh.com/mcp.md)
+
 ## Before you start
 
 - **You need a CVPosh account** (https://cvposh.com). The extension is a connector, not a resume builder.
@@ -83,6 +111,15 @@ The MCP server receives what the tools need: the CV ids, and any resume or job t
 ## Support
 
 support@cvposh.com or https://cvposh.com.
+
+## Links
+
+- Site: https://cvposh.com
+- MCP page (setup for every client, quickstart, oversight): https://cvposh.com/mcp
+- Pricing: https://cvposh.com/pricing
+- Official MCP Registry: https://registry.modelcontextprotocol.io/v0/servers?search=cvposh
+- Other clients: https://github.com/airdropfi/cvposh-claude-plugin, https://github.com/airdropfi/cvposh-gemini-extension, https://github.com/airdropfi/cvposh-cursor-kit
+- Privacy: https://cvposh.com/privacy#ai-assistants
 
 ## License
 
